@@ -1,0 +1,104 @@
+q<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login OR Signup</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            div.table{
+                display : table;
+                margin: auto;
+                padding: 5px;
+                width : auto;
+                text-align: center;
+                background-color: rgb(245,245,245);
+            }
+            div.tablem{
+                display : table;
+                margin: auto;
+                padding: 5px;
+                width : auto;
+                text-align: center;
+                background-color: rgb(245,245,245);
+                border-radius: 10px;
+            }
+            div.row{
+                display:table-row;
+                margin: 5px;
+                text-align: center;
+                vertical-align: central;
+            }
+            div.cell{
+                display:table-cell;                
+                padding: 3px;
+                vertical-align: central;
+            }
+            input.field{
+                border-radius: 7px;
+            }
+            body{
+                background-color: rgb(235,235,235);
+                background-image: url('loginbgimg.png');
+            }
+        </style>            
+    </head>
+    <body>
+        <div>
+            <form method='get' action='MainServ'>
+                <div class="tablem">
+                    <div class="row">
+                        <div class="cell">
+                            <div class='table'>
+                                <h3>Login :</h3>
+                                <div class='row'>                    
+                                    <div class='cell'><img src="usernameimg.png" height="15"></div>
+                                    <div class="cell"><input name='ln' class="field" placeholder=" Username"></div>                            
+                                </div>
+                                <div class="row">
+                                    <div class='cell'><img src="passwordimg.png" height="15"></div>
+                                    <div class="cell"><input type="password" name="lp" class="field" placeholder=" Password"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <b><h2>OR</h2></b>
+                        </div>
+                        <div class="cell">
+                            <div class='table'>
+                                <h3>SignUp :</h3>
+                                <div class='row'>                    
+                                    <div class='cell'><img src="usernameimg.png" height="15"></div>
+                                    <div class="cell"><input name='sn' class="field" placeholder=" Username"></div>                            
+                                </div>
+                                <div class='row'>
+                                    <div class='cell'><img src="passwordimg.png" height="15"></div>
+                                    <div class="cell"><input type="password" name="sp" class="field" placeholder=" Password"></div>
+                                </div>
+                                <div class='row'>
+                                    <div class='cell'><img src="phoneimg.png" height="15"></div>
+                                    <div class="cell"><input type="text" name="sph" class="field" placeholder=" Phone number"></div>
+                                </div>
+                                <div class='row'>
+                                    <div class='cell'><img src="addressimg.png" height="15"></div>
+                                    <div class="cell"><input type="text" name="sa" class="field" placeholder=" Address"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="cell"></div>
+                        <div class="cell">
+                            <input type='submit' name='submit' value="Submit" class="field">
+                        </div>
+                        <div class="cell"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
